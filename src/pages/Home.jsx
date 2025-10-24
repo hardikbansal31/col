@@ -6,6 +6,7 @@ import ProductShowcase from "../components/ProductShowcase.jsx";
 import AboutSection from "../components/AboutSection";
 import Footer from "../components/Footer";
 import BackgroundBlobs from "../components/BackgroundBlobs.jsx";
+import KeyPeople from "../components/KeyPeople.jsx";
 
 export default function Home() {
   return (
@@ -21,9 +22,9 @@ export default function Home() {
         <Hero />
         <AboutSection />
         <ProductShowcase />
+        <KeyPeople />
         <Footer />
       </div>
     </div>
   );
 }
-
