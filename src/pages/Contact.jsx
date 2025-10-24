@@ -31,10 +31,28 @@ export default function Contact() {
             Get In Touch
           </h3>
           <p>
-            <strong>Phone:</strong> 011-41040972 | 011-42804057 | +91-9810821232
+            <strong>Phone:</strong>{" "}
+            <a href="tel:01141040972" className="hover:underline">
+              011-41040972
+            </a>{" "}
+            |{" "}
+            <a href="tel:01142804057" className="hover:underline">
+              011-42804057
+            </a>{" "}
+            |{" "}
+            <a href="tel:+919810821232" className="hover:underline">
+              +91-9810821232
+            </a>
           </p>
           <p>
-            <strong>Email:</strong> coloraids@gmail.com | coloraids@yahoo.com
+            <strong>Email:</strong>{" "}
+            <a href="mailto:coloraids@gmail.com" className="hover:underline">
+              coloraids@gmail.com
+            </a>{" "}
+            |{" "}
+            <a href="mailto:coloraids@yahoo.com" className="hover:underline">
+              coloraids@yahoo.com
+            </a>
           </p>
           <p>
             <strong>Address:</strong> 677, GH-5 & 7, Paschim Vihar, New Delhi,
