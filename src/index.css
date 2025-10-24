@@ -1,7 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
+}
+
+@layer base {
+  /* Apply the clean font to the entire body by default */
+  body {
+    @apply font-sans;
+  }
+
+  /* Apply the traditional font to all heading tags */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
 }

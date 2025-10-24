@@ -11,7 +11,7 @@ export default function Contact() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl font-bold text-center mb-8"
+          className="text-4xl font-bold text-center mb-12"
         >
           Contact{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
@@ -19,51 +19,46 @@ export default function Contact() {
           </span>
         </motion.h1>
 
-        <motion.form
+        {/* Contact Details Section */}
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.6 }}
-          className="space-y-6"
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center text-gray-300 space-y-3"
         >
-          <div>
-            <label className="block text-gray-300 mb-2">Full Name</label>
-            <input
-              type="text"
-              className="w-full rounded-md bg-[#1a1a1a] border border-white/10 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-pink-500"
-              placeholder="Enter your full name"
-            />
-          </div>
-          <div>
-            <label className="block text-gray-300 mb-2">Email Address</label>
-            <input
-              type="email"
-              className="w-full rounded-md bg-[#1a1a1a] border border-white/10 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
-              placeholder="Provide your email address"
-            />
-          </div>
-          <div>
-            <label className="block text-gray-300 mb-2">Message</label>
-            <textarea
-              className="w-full rounded-md bg-[#1a1a1a] border border-white/10 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-pink-500"
-              placeholder="Type your message here"
-              rows="5"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="w-full py-3 rounded-full bg-gradient-to-r from-pink-500 to-cyan-400 text-white font-medium hover:scale-105 transition"
-          >
-            Submit Inquiry
-          </button>
-        </motion.form>
+          <h3 className="text-2xl font-semibold mb-4 text-white">
+            Get In Touch
+          </h3>
+          <p>
+            <strong>Phone:</strong> 011-41040972 | 011-42804057 | +91-9810821232
+          </p>
+          <p>
+            <strong>Email:</strong> coloraids@gmail.com | coloraids@yahoo.com
+          </p>
+          <p>
+            <strong>Address:</strong> 677, GH-5 & 7, Paschim Vihar, New Delhi,
+            110087
+          </p>
+        </motion.div>
 
-        <div className="mt-12 text-gray-400">
-          <h3 className="text-xl font-semibold mb-4">Contact Details</h3>
-          <p>Phone: 011-41040972 | 011-42804057 | +91-9810821232</p>{" "}
-          
-          <p>Address: 677, GH-5 & 7, Paschim Vihar, New Delhi, 110087</p>{" "}
-          <p>Email: coloraids@gmail.com | coloraids@yahoo.com</p>{" "}
-        </div>
+        {/* Google Maps Iframe Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          className="mt-16"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.579647247494!2d77.0883653753738!3d28.6723249756417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05c5631118ed%3A0x83e3952864698882!2sCOLORAIDS!5e0!3m2!1sen!2sin!4v1729754165682!5m2!1sen!2sin"
+            className="w-full h-96 rounded-lg border-2 border-white/10"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Coloraids Location"
+          ></iframe>
+        </motion.div>
       </section>
       <Footer />
     </div>

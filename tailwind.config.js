@@ -2,7 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        // This will be for our headings
+        heading: ["Laila", "serif"],
+        // This will be for our body text
+        sans: ["Mukta", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
